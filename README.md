@@ -36,11 +36,11 @@ Write the detailed procedure here
 /*
 ~
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: RAGUL R
-RegisterNumber:  212222100040
+Developed by: MITHRA MUKUNDAA SG
+RegisterNumber:  212222100026
 
 Half Subtractor :
-
+```python
 module ex03(A,B,Diff,Borrow);
 input A,B;
 output Diff,Borrow;
@@ -49,17 +49,17 @@ xor(Diff,A,B);
 not(X,A);
 and(Borrow,X,B);
 endmodule
-
+```
 Full Subtractor:
-
+```python
 module ex03(A,B,C,Diff,Borrow);
 input A,B,C;
 output Diff,Borrow;
 assign Diff = A^B^C;
 assign Borrow = ~A & (B^C) | B & C;
 endmodule
+```
 ~
-
 */
 
 ## Output:
